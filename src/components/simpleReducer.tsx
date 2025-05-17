@@ -23,9 +23,24 @@ const SimpleReducer = () => {
       <div className="m-auto max-w-[900px]">
         <h1>Счетчик: {state.count}</h1>
         <div className="flex items-center gap-4">
-          <button onClick={() => dispatch({ type: "increment" })}>+1</button>
-          <button onClick={() => dispatch({ type: "decrement" })}>-1</button>
-          <button onClick={() => dispatch({ type: "reset" })}>Очистить</button>
+          <button
+            className="dark:text-white"
+            onClick={() => dispatch({ type: "increment" })}
+          >
+            +1
+          </button>
+          <button
+            className="dark:text-white"
+            onClick={() => dispatch({ type: "decrement" })}
+          >
+            -1
+          </button>
+          <button
+            className="dark:text-white"
+            onClick={() => dispatch({ type: "reset" })}
+          >
+            Очистить
+          </button>
         </div>
       </div>
     </>
